@@ -15,7 +15,7 @@ jobs:
           node-version: '24'
       - run: npm ci
       - run: npm run build
-      - run: rm -rf docs && cp -r dist docs
+      - run: rm -rf docs && cp -r dist docs && touch docs/.nojekyll
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
