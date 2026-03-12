@@ -1,0 +1,187 @@
+.session-item {
+  position: relative;
+}
+.delete-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(255,77,79,0.12);
+  transition: background 0.2s;
+}
+.delete-btn:hover {
+  background: #d9363e;
+}
+/* Minimalist, refined SPA styles for study timer */
+.study-app {
+  max-width: 480px;
+  margin: 48px auto;
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ef 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(80, 80, 120, 0.12);
+  padding: 32px 24px;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+.timer-section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #3a2d6a;
+  letter-spacing: 0.5px;
+}
+
+.timer-display {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #aa3bff;
+  background: #f4f3ec;
+  border-radius: 12px;
+  padding: 16px 0;
+  margin-bottom: 18px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(170, 59, 255, 0.08);
+}
+
+.timer-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+  justify-content: center;
+}
+
+.start-btn, .stop-btn, .reset-btn, .save-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.start-btn {
+  background: #aa3bff;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(170, 59, 255, 0.12);
+}
+.start-btn:disabled {
+  background: #e0e7ef;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.stop-btn {
+  background: #f4f3ec;
+  color: #aa3bff;
+  border: 1px solid #aa3bff;
+}
+.stop-btn:disabled {
+  background: #e0e7ef;
+  color: #aaa;
+  border-color: #e0e7ef;
+  cursor: not-allowed;
+}
+.reset-btn {
+  background: #e0e7ef;
+  color: #3a2d6a;
+}
+.save-btn {
+  background: #3a2d6a;
+  color: #fff;
+}
+.save-btn:disabled {
+  background: #e0e7ef;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+.session-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.session-form input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #aa3bff;
+  font-size: 1rem;
+  background: #fff;
+  color: #3a2d6a;
+}
+
+.sessions-section {
+  margin-top: 32px;
+}
+.sessions-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3a2d6a;
+  margin-bottom: 12px;
+}
+.sessions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.session-item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(170, 59, 255, 0.06);
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  gap: 4px;
+}
+.session-date {
+  font-size: 0.95rem;
+  color: #aa3bff;
+  font-weight: 500;
+}
+.session-duration {
+  font-size: 1.1rem;
+  color: #3a2d6a;
+  font-weight: 600;
+}
+.session-desc {
+  font-size: 1rem;
+  color: #6b6375;
+  font-style: italic;
+}
+.empty {
+  color: #aaa;
+  text-align: center;
+  margin-top: 12px;
+}
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}

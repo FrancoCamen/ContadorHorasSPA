@@ -1,0 +1,1 @@
+ - [x] Skill frontend-design instalado correctamente.
